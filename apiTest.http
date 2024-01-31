@@ -1,0 +1,61 @@
+@token=""
+
+### Get all things
+GET http://localhost:3001/things
+Authorization: Bearer {{token}}
+
+
+### Get by id
+GET http://localhost:3001/things/65b953d49c49916a2191fbe6
+Authorization: Bearer {{token}}
+
+
+### Get by type
+GET http://localhost:3001/things?type=something
+Authorization: Bearer {{token}}
+
+
+### Create a thing
+POST http://localhost:3001/things
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+
+{
+    "name":"test4",
+    "year":2002,
+    "type":["something","nothing"]
+}
+
+### Update a thing
+PATCH http://localhost:3001/things/65b95516335f684ab9ffe77c
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+
+{
+    "year":2017
+}
+
+### Delete a thing
+DELETE http://localhost:3001/things/65b95516335f684ab9ffe77c
+Authorization: Bearer {{token}}
+
+
+### Signup
+POST http://localhost:3001/auth/signup
+Content-Type: application/json
+
+{
+    "email":"testalos",
+    "password":"1"
+}
+
+### Login
+POST http://localhost:3001/auth/login
+Content-Type: application/json
+
+{
+    "email":"testalos",
+    "password":"1"
+}

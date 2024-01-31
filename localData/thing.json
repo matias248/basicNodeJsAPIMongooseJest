@@ -1,0 +1,14 @@
+[
+  {
+    "id": "65b6c351179df29507b30db1",
+    "name": "thingName",
+    "year": 2010,
+    "type": ["something"]
+  },
+  {
+    "id": "65b6c351179df29507b30db2",
+    "name": "thingName2",
+    "year": 2010,
+    "type": []
+  }
+]
